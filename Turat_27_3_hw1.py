@@ -30,11 +30,3 @@ if __name__ == "__main__":
     print(f'length of the catchphrase is {len(first_hero)}')
     print(first_hero)
 
-…or create a new repository on the command line
-echo "# Geeks" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/ddrraaccaarriiss/Geeks.git
-git push -u origin main
