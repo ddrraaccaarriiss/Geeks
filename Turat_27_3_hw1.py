@@ -22,9 +22,9 @@ class SuperHero:
     def __len__(self):
         return len(self.catchphrase)
     
-    hero = SuperHero('Дейдара', 'Аниме персонаж', 'взрыв', 10, 'Искуство это взрыв!')
-    print(f'name is {hero.get_name()}')
-    first_hero.double_health_points()
-    print(f'length of the catchphrase is {hero.__len__()}')
-    print(hero)
+hero = SuperHero('Дейдара', 'Аниме персонаж', 'взрыв', 10, 'Искуство это взрыв!')
+print(f'name is {hero.get_name()}')
+hero.double_health_points()
+print(f'length of the catchphrase is {hero.__len__()}')
+print(hero)
 
