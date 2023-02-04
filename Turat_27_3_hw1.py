@@ -21,12 +21,10 @@ class SuperHero:
 
     def __len__(self):
         return len(self.catchphrase)
-
-
-if __name__ == "__main__":
-    first_hero = SuperHero('Bruce Wayne', 'Batman', 'Money', 100, 'I am Batman!')
-    print(f'name is {first_hero.get_name()}')
+    
+    hero = SuperHero('Дейдара', 'Аниме персонаж', 'взрыв', 10, 'Искуство это взрыв!')
+    print(f'name is {hero.get_name()}')
     first_hero.double_health_points()
-    print(f'length of the catchphrase is {len(first_hero)}')
-    print(first_hero)
+    print(f'length of the catchphrase is {hero.__len__()}')
+    print(hero)
 
