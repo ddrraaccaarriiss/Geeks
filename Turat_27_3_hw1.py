@@ -1,5 +1,3 @@
-import math
-
 class SuperHero:
     people = 'people'
 
@@ -11,7 +9,7 @@ class SuperHero:
         self.catchphrase = catchphrase
 
     def get_name(self):
-        return print(f'name is: {self.name}')
+        return self.name
 
     def double_health_points(self):
         self.health_points *= 2
@@ -25,87 +23,21 @@ class SuperHero:
         return len(self.catchphrase)
 
 
-super_hero = SuperHero('Кларк', 'Супермен', 'лазер', 100, 'Против зла!')
-super_hero.get_name()
-super_hero.double_health_points()
-print(f'length of the catchphrase is {super_hero.__len__()}')
-print(super_hero)
+if __name__ == "__main__":
+    first_hero = SuperHero('Bruce Wayne', 'Batman', 'Money', 100, 'I am Batman!')
+    print(f'name is {first_hero.get_name()}')
+    first_hero.double_health_points()
+    print(f'length of the catchphrase is {len(first_hero)}')
+    print(first_hero)
 
+#echo "# Geeks" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ddrraaccaarriiss/Geeks.git
+git push -u origin main
 
-class Sky(SuperHero):
-    people = "people"
-
-    def __init__(self, name, nickname, superpower, health_points, catchphrase, damage, fly=False):
-        # super().__init__(name, nickname, superpower, health_points, catchphrase)
-        SuperHero.__init__(self, name, nickname, superpower, health_points, catchphrase)
-        self.damage = damage
-        self.fly = fly
-
-    def squaring_health_points(self):
-        self.health_points *= self.health_points
-        self.fly = True
-
-    def printfly(self):
-        print(f'{self.fly} fly in the True_phrase ')
-
-    def crit(self):
-        print(f"exponentiated damage: {math.pow(self.damage, self.damage)}")
-
-
-sky_hero = Sky('Bruce Wayne', 'Batman', 'Money', 100, 'I am Batman!', 3)
-sky_hero.squaring_health_points()
-sky_hero.printfly()
-sky_hero.crit()
-print(sky_hero)
-
-
-class Space(SuperHero):
-    people = "people"
-
-    def __init__(self, name, nickname, superpower, health_points, catchphrase, damage, fly=False):
-        # super().__init__(name,nickname, superpower, health_points, catchphrase)
-        SuperHero.__init__(self, name, nickname, superpower, health_points, catchphrase)
-        self.damage = damage
-        self.fly = fly
-
-    def squaring_health_points(self):
-        self.health_points *= self.health_points
-        self.fly = True
-
-    def printfly(self):
-        print(f'{self.fly} fly in the True_phrase ')
-
-    def crit(self):
-        print(f"exponentiated damage: {math.pow(self.damage, self.damage)}")
-
-
-space_hero = Space('Дейдара', 'Аниме персонаж', 'взрыв', 100, 'Искуство это взрыв!', 3)
-space_hero.squaring_health_points()
-space_hero.printfly()
-space_hero.crit()
-print(space_hero)
-
-
-class Villain(Space):
-    people = "monster"
-
-    def __init__(self, name, nickname, superpower, health_points, catchphrase, damage, fly=False):
-        Space.__init__(self, name, nickname, superpower, health_points, catchphrase, damage, fly)
-
-    def gen_x(self): ...
-
-    def crit(self):
-        print(f"exponentiated damage: {math.pow(self.damage, self.damage)}")
-        # print(pow(self.damage , self.damage ))
-        # self.damage = self.damage ** 5
-
-
-villain_hero = Villain("Виллиан", "Выдуманный герой", "Уроган", 100, "Делай добро", 3)
-print(villain_hero)
-villain_hero.crit()
-
-
-
-
-
-
+git remote add origin https://github.com/ddrraaccaarriiss/Geeks.git
+ git branch -M main
+git push -u origin main
