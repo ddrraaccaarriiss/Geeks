@@ -30,14 +30,3 @@ if __name__ == "__main__":
     print(f'length of the catchphrase is {len(first_hero)}')
     print(first_hero)
 
-#echo "# Geeks" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/ddrraaccaarriiss/Geeks.git
-git push -u origin main
-
-git remote add origin https://github.com/ddrraaccaarriiss/Geeks.git
- git branch -M main
-git push -u origin main
