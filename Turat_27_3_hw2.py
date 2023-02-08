@@ -12,7 +12,7 @@ class SuperHero:
     def get_name(self):
         return print(f'name is: {self.name}')
 
-    def double_health_points(self):
+    def change_health_points(self):
         self.health_points *= 2
 
     def __str__(self):
@@ -28,7 +28,7 @@ class SuperHero:
 
 super_hero = SuperHero('Кларк', 'Супермен', 'лазер', 100, 'Против зла!')
 super_hero.get_name()
-super_hero.double_health_points()
+super_hero.change_health_points()
 print(f'length of the catchphrase is {super_hero.__len__()}')
 print(super_hero)
 
@@ -40,7 +40,7 @@ class Sky(SuperHero):
         SuperHero.__init__(self, name, nickname, superpower, health_points, catchphrase)
         self.damage = damage
         self.fly = fly
-    def squaring_health_points(self):
+    def change_health_points(self):
         self.health_points *= self.health_points
         self.fly = True
     def printfly(self):
@@ -51,7 +51,7 @@ class Sky(SuperHero):
 
 
 sky_hero = Sky('Bruce Wayne', 'Batman', 'Money', 100, 'I am Batman!',3)
-sky_hero.squaring_health_points()
+sky_hero.change_health_points()
 sky_hero.printfly()
 sky_hero.crit()
 print(sky_hero)
@@ -64,18 +64,19 @@ class Space(SuperHero):
         self.damage = damage
         self.fly = fly
 
-    def squaring_health_points(self):
+    def change_health_points(self):
         self.health_points *= self.health_points
         self.fly = True
 
     def printfly(self):
         print(f'{self.fly} fly in the True_phrase ')
+
     def crit(self):
         print(f"exponentiated damage: {math.pow(self.damage, self.damage)}")
 
 
 space_hero = Space('Дейдара', 'Аниме персонаж', 'взрыв', 100, 'Искуство это взрыв!',3)
-space_hero.squaring_health_points()
+space_hero.change_health_points()
 space_hero.printfly()
 space_hero.crit()
 print(space_hero)
@@ -87,7 +88,7 @@ class Villain(Space):
         Space.__init__(self, name, nickname, superpower, health_points, catchphrase, damage, fly)
 
 
-    def gen_x(self): ...
+    def gen_x(self):...
     def crit(self):
         print(f"exponentiated damage: {math.pow(self.damage, self.damage)}")
         # print(pow(self.damage , self.damage ))
