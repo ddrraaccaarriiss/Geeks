@@ -45,15 +45,15 @@ class Sky(SuperHero):
         self.fly = True
     def printfly(self):
         print(f'{self.fly} fly in the True_phrase ')
-    def crit(self):
-        print(f"exponentiated damage: {math.pow(self.damage, self.damage)}")
-
-
+    # def crit(self):
+    #     print(f"exponentiated damage: {math.pow(self.damage, self.damage)}")
+    #
+    #
 
 sky_hero = Sky('Bruce Wayne', 'Batman', 'Money', 100, 'I am Batman!',3)
 sky_hero.change_health_points()
 sky_hero.printfly()
-sky_hero.crit()
+# sky_hero.crit()
 print(sky_hero)
 
 class Space(SuperHero):
@@ -71,14 +71,14 @@ class Space(SuperHero):
     def printfly(self):
         print(f'{self.fly} fly in the True_phrase ')
 
-    def crit(self):
-        print(f"exponentiated damage: {math.pow(self.damage, self.damage)}")
+    # def crit(self):
+    #     print(f"exponentiated damage: {math.pow(self.damage, self.damage)}")
+    #
 
-
-space_hero = Space('Дейдара', 'Аниме персонаж', 'взрыв', 100, 'Искуство это взрыв!',3)
+space_hero = Space('Дейдара', 'Аниме персонаж', 'взрыв', 100, 'Искуство это взрыв!',4)
 space_hero.change_health_points()
 space_hero.printfly()
-space_hero.crit()
+# space_hero.crit()
 print(space_hero)
 
 
@@ -90,7 +90,7 @@ class Villain(Space):
 
     def gen_x(self):...
     def crit(self):
-        print(f"exponentiated damage: {math.pow(self.damage, self.damage)}")
+        print(f" {self.name } exponentiated damage: {math.pow(self.damage, self.damage)}")
         # print(pow(self.damage , self.damage ))
         # self.damage = self.damage ** 5
 
@@ -98,7 +98,8 @@ class Villain(Space):
 villain_hero = Villain("Виллиан", "Выдуманный герой", "Уроган",100,"Делай добро",3)
 print(villain_hero)
 villain_hero.crit()
-
+Villain.crit(space_hero)
+Villain.crit(sky_hero)
 
 
 
