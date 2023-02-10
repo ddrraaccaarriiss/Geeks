@@ -103,5 +103,7 @@ Villain.crit(sky_hero)
 
 
 
-
+git add .
+git commit -m 'hw1,2'
+git push -u origin main
 
