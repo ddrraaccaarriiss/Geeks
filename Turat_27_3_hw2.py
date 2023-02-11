@@ -53,7 +53,7 @@ class Sky(SuperHero):
 sky_hero = Sky('Bruce Wayne', 'Batman', 'Money', 100, 'I am Batman!',3)
 sky_hero.change_health_points()
 sky_hero.printfly()
-# sky_hero.crit()
+## sky_hero.crit()
 print(sky_hero)
 
 class Space(SuperHero):
@@ -103,7 +103,4 @@ Villain.crit(sky_hero)
 
 
 
-git add .
-git commit -m 'hw1,2'
-git push -u origin main
 
