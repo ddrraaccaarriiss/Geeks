@@ -47,8 +47,8 @@ class Sky(SuperHero):
         print(f'{self.fly} fly in the True_phrase ')
     # def crit(self):
     #     print(f"exponentiated damage: {math.pow(self.damage, self.damage)}")
-    #
-    #
+
+
 
 sky_hero = Sky('Bruce Wayne', 'Batman', 'Money', 100, 'I am Batman!',3)
 sky_hero.change_health_points()
