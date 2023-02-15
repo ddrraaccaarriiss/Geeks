@@ -101,6 +101,3 @@ villain_hero.crit()
 Villain.crit(space_hero)
 Villain.crit(sky_hero)
 
-
-
-
