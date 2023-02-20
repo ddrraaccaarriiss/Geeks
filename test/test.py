@@ -16,11 +16,11 @@ def truefalse(x1, y1, x2, y2, x3, y3):
         kv_b, kv_c = kv_c, kv_b
 
     if kv_a + kv_b == kv_c:
-        with open('truefalse.tx', 'w', encoding='UTF-8') as file:
+        with open('truefalse.txt', 'w', encoding='UTF-8') as file:
             file.write("True")
 
     else:
-        with open('truefalse.tx', 'w', encoding='UTF-8') as file:
+        with open('truefalse.txt', 'w', encoding='UTF-8') as file:
             file.write("Fasle")
 
 test1 = truefalse(1, 7, 7,7,1, 1)#  является прямо угольным треугольником

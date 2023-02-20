@@ -1,21 +1,9 @@
-# 1
-a = ["5","14:10:1", "11:12:8","12:30:9"]
-print(sorted(a, key=lambda x: int(x.split(":")[0]),reverse=True))
-
-# 2
-a = ["5","14:10:1", "11:12:8","12:30:9"]
-print(sorted(a, key=lambda x: int(x.split(":")[0]),reverse=False))
-
-
-
-
-
-
-
-
-
-
-
+t = []
+n = int(input('Введите количество круга: '))
+for i in range(n):
+    m = input('Введите час, минуту и секунду  через пробел: ')
+    t.append(m)
+print(sorted(t,reverse=True))
 
 
 
