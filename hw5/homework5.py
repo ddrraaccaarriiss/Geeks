@@ -34,13 +34,19 @@ class5.class5()
 
 
 
-
-
-
-
-
-
-
-
-
+file = open('git commands.txt', 'w', encoding='UTF-8')
+file.write('git init'
+           '\ngit remote add origin link'
+           '\ngit add . or name to file'
+           '\ngit commit -m "text"'
+           '\ngit push origin name to branch'
+           '\ngit remote remove origin'
+           '\ngit rm --cached name to file'
+           '\ngit rm --cached -r name to dir'
+           '\ngit branch\ngit branch name to branch'
+           '\ngit checkout name branch'
+           '\ngit branch -d name to branch '
+           '\ngit checkout -b name to branch'
+           '\ngit merge name to branch')
+file.close()
 
