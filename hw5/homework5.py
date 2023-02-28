@@ -49,4 +49,3 @@ file.write('git init'
            '\ngit checkout -b name to branch'
            '\ngit merge name to branch')
 file.close()
-
